@@ -188,6 +188,7 @@ $sm_lang = array(
 		'show_update' => 'Check for updates?',
 		'password_encrypt_key' => 'The encryption key password',
 		'password_encrypt_key_note' => 'This key is used to encrypt passwords that are stored on servers for access to websites. If the key will change the stored password is invalid!',
+		'proxy_url' => 'Proxy URL',
 		'email_status' => 'Allow sending email',
 		'email_from_email' => 'Email from address',
 		'email_from_name' => 'Email from name',
@@ -246,6 +247,7 @@ $sm_lang = array(
 		'settings_pushover' => 'Pushover settings',
 		'settings_notification' => 'Notification settings',
 		'settings_log' => 'Log settings',
+		'settings_proxy' => 'Proxy settings',
 		'auto_refresh' => 'Auto-refresh',
 		'auto_refresh_servers' =>
 			'Auto-refresh servers page.<br/>'.

@@ -52,6 +52,7 @@ class ConfigController extends AbstractController {
 	 * @var array $fields
 	 */
 	protected $fields = array(
+		'proxy_url',
 		'email_from_name',
 		'email_from_email',
 		'email_smtp_host',
@@ -293,11 +294,13 @@ class ConfigController extends AbstractController {
 			'label_settings_pushover' => psm_get_lang('config', 'settings_pushover'),
 			'label_settings_notification' => psm_get_lang('config', 'settings_notification'),
 			'label_settings_log' => psm_get_lang('config', 'settings_log'),
+			'label_settings_proxy' => psm_get_lang('config', 'settings_proxy'),
 			'label_general' => psm_get_lang('config', 'general'),
 			'label_language' => psm_get_lang('config', 'language'),
 			'label_show_update' => psm_get_lang('config', 'show_update'),
 			'label_password_encrypt_key' => psm_get_lang('config', 'password_encrypt_key'),
 			'label_password_encrypt_key_note' => psm_get_lang('config', 'password_encrypt_key_note'),
+			'label_proxy_url' => psm_get_lang('config', 'proxy_url'),
 			'label_email_status' => psm_get_lang('config', 'email_status'),
 			'label_email_from_email' => psm_get_lang('config', 'email_from_email'),
 			'label_email_from_name' => psm_get_lang('config', 'email_from_name'),
