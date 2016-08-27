@@ -315,6 +315,11 @@ function psm_curl_get($href, $header = false, $body = true, $timeout = null, $ad
 
 	curl_setopt($ch, CURLOPT_URL, $href);
 
+	$proxy_url = psm_get_conf('proxy_url','');
+	if (!empty($proxy_url)) {
+		curl_setopt($ch, CURLOPT_PROXY, $proxy_url);
+	}
+
 	if($add_agent) {
 		curl_setopt ($ch, CURLOPT_USERAGENT, 'Mozilla/5.0 (compatible; phpservermon/'.PSM_VERSION.'; +http://www.phpservermonitor.org)');
 	}
