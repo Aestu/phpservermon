@@ -71,9 +71,15 @@
             </div>
             <legend>{{ label_settings_proxy }}</legend>
             <div class="control-group">
+                <div class="controls">
+                        <label class="checkbox" for="proxy"><input type="checkbox" id="proxy" name="proxy[]" {{ proxy_checked|raw }} />{{ label_proxy }}</label>
+                </div>
+            </div>
+            <div class="control-group">
                 <label class="control-label" for="proxy_url">{{ label_proxy_url }}</label>
                 <div class="controls">
                     <input type="text" id="proxy_url" name="proxy_url" value="{{ proxy_url }}" maxlength="100" placeholder="{{ label_proxy_url }}" />
+                    <p class="help-block">{{ label_alert_proxy_url|raw }}</p>
                 </div>
             </div>
             <div class="form-actions">
