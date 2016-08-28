@@ -336,8 +336,13 @@ function psm_curl_get($href, $header = false, $body = true, $timeout = null, $ad
 	curl_setopt($ch, CURLOPT_URL, $href);
 
 	$proxy_url = psm_get_conf('proxy_url','');
-	if (psm_get_conf('proxy','0') === '1' && !empty($proxy_url)) {
+	if (psm_get_conf('proxy','0') === '1') {
 		curl_setopt($ch, CURLOPT_PROXY, $proxy_url);
+		$proxy_user = psm_get_conf('proxy_user','');
+		$proxy_password = psm_get_conf('proxy_password','');
+		if (!empty($proxy_user) && !empty($proxy_password)) {
+			curl_setopt($ch, CURLOPT_PROXYUSERPWD, $proxy_user . ':' . $proxy_password);
+		}
 	}
 
 	if($add_agent) {

@@ -132,6 +132,8 @@ class Installer {
 					('language', 'en_US'),
 					('proxy', '0'),
 					('proxy_url', ''),
+					('proxy_user', ''),
+					('proxy_password', ''),
 					('email_status', '1'),
 					('email_from_email', 'monitor@example.org'),
 					('email_from_name', 'Server Monitor'),

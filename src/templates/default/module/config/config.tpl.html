@@ -83,6 +83,18 @@
                     <p class="help-block">{{ label_alert_proxy_url|raw }}</p>
                 </div>
             </div>
+            <div class="control-group">
+                <label class="control-label" for="proxy_user">{{ label_proxy_user }}</label>
+                <div class="controls">
+                    <input type="text" id="proxy_user" name="proxy_user" value="{{ proxy_user }}" maxlength="100" placeholder="{{ label_proxy_user }}" />
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label" for="proxy_password">{{ label_proxy_password }}</label>
+                <div class="controls">
+                    <input type="password" id="proxy_password" name="proxy_password" value="{{ proxy_password }}" maxlength="100" placeholder="{{ label_proxy_password }}" />
+                </div>
+            </div>
             <div class="form-actions">
                 <button class="btn btn-success" type="submit" name="general_submit">{{ label_save }}</button>
             </div>

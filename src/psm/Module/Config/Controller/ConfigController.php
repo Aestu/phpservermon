@@ -54,6 +54,8 @@ class ConfigController extends AbstractController {
 	 */
 	protected $fields = array(
 		'proxy_url',
+		'proxy_user',
+		'proxy_password',
 		'email_from_name',
 		'email_from_email',
 		'email_smtp_host',
@@ -303,6 +305,8 @@ class ConfigController extends AbstractController {
 			'label_password_encrypt_key_note' => psm_get_lang('config', 'password_encrypt_key_note'),
 			'label_proxy' => psm_get_lang('config', 'proxy'),
 			'label_proxy_url' => psm_get_lang('config', 'proxy_url'),
+			'label_proxy_user' => psm_get_lang('config', 'proxy_user'),
+			'label_proxy_password' => psm_get_lang('config', 'proxy_password'),
 			'label_email_status' => psm_get_lang('config', 'email_status'),
 			'label_email_from_email' => psm_get_lang('config', 'email_from_email'),
 			'label_email_from_name' => psm_get_lang('config', 'email_from_name'),
